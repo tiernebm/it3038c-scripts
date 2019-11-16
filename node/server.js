@@ -53,8 +53,8 @@ http.createServer(function(req, res){
         res.writeHead(404, {"Content-Type": "text/plain"});
         res.end("404 file not found")
     }
-}).listen(3000)
+}).listen(3001)
 
 
 
-console.log("Server listening on port 3000");
+console.log("Server listening on port 3001");

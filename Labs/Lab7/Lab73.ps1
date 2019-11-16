@@ -1,0 +1,1 @@
+Get-WUInstall -MicrosoftUpdate -IgnoreUserInput -WhatIf -Verbose
