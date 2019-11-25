@@ -3,7 +3,7 @@ README for SNAKE 2.0 by Brett Tierney
 How to Run:
 
 1. Run snake .py in terminal.
-2. You must be in brett's IT3038c-scripts directory or you will not have the proper files. (all files are small .gif images so it is not much space.)
+2. You must be in brett's IT3038c-scripts/project/snake directory or you will not have the proper files. (all files are small .gif images so it is not much space.)
 
 
 Changelog: 
