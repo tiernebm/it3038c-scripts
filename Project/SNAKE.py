@@ -7,7 +7,7 @@ import random
 screenChangex =100
 screenChangey =100
 delay = 0.1
-
+speed = 15
 #Set Up screen
 window =turtle.Screen()
 window.title("Snake Game by BRETT TIERNEY")
@@ -69,19 +69,19 @@ segments = []
 def move():
     if head.direction == "up":
         y = head.ycor()
-        head.sety(y + 20)
+        head.sety(y + speed)
         head.shape(snakeHEADUP)
     if head.direction == "down":
         y = head.ycor()
-        head.sety(y - 20)
+        head.sety(y - speed)
         head.shape(snakeHEADDOWN)
     if head.direction == "left":
         x = head.xcor()
-        head.setx(x - 20)
+        head.setx(x - speed)
         head.shape(snakeHEADLEFT)
     if head.direction == "right":
         x = head.xcor()
-        head.setx(x + 20)  
+        head.setx(x + speed)  
         head.shape(snakeHEADRight)              
 
 def goUp():
@@ -137,13 +137,15 @@ while True:
      x = random.randint(-280,280)
      y = random.randint(-280,280)
      poison.goto(x,y)
+     # increase speed
+     speed = speed + 1
 
     #check for poison eat NEW ADDITION
     if head.distance(poison)<20:
         turtle.Screen().bye()
         print("You ate the Poison, YOU LOSE!")
         
-    #ove end segment first
+    #move end segment first
 
     for index in range(len(segments)-1, 0, -1):
         x = segments[index-1].xcor()
