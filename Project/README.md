@@ -20,4 +20,6 @@ Changelog:
 - Edge collision position changed to 280 for better looking collision
   - Removed stop after colision
 - Diffuculty
+  - speed increaed by 1 with each EAT
+  - poison randomized on each EAT
   
